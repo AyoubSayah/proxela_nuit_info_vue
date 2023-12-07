@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #edebd5;
+  --secondary-color: #317d8e;
+  --gray-color: #e4e4e4;
+}
+:root {
+  --color: #a7e1f0;
+  --background: #2d1e6f;
+}
+body::-webkit-scrollbar {
+  width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--primary-color);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--secondary-color);
+  border-radius: 6px;
+  border: 3px solid var(--secondary-color);
+}
+body {
+  overflow-x: hidden;
+}
+
+@keyframes rainanimation {
+  0% {
+    top: 0%;
+
+    opacity: 1;
+  }
+  80% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(100%);
+    top: 95%;
+    opacity: 0;
+  }
+}
+@keyframes snowAnimation {
+  0% {
+    top: 0%;
+
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    top: 95%;
+    opacity: 0;
+  }
+}
