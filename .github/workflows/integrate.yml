@@ -28,7 +28,7 @@ jobs:
           yarn
           yarn build
           cd dist
-          cp -r . /var/www/vervis
+          cp -r . /var/www/html/vervis
           systemctl restart nginx
 
 
