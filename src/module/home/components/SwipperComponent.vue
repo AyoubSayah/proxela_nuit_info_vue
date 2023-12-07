@@ -66,9 +66,7 @@ const pagination = ref({
   bulletActiveClass: "!bg-theme-secondary-60 !opacity-100",
   totalClass: "!bg-red-400",
   horizontalClass: "-top-0 h-16 !w-max !right-12 !left-[unset]",
-  renderBullet: function (index: number, className: string) {
-    return <Box>m </Box>;
-  },
+ 
 });
 const { title } = defineProps<{ title: string; background: string }>();
 const titleId = ref(title.replace(" ", ""));
