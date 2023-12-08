@@ -23,7 +23,7 @@ import useIsStickyNavbar from "@/utils/hooks/useIsStickyNavbar";
 import Loader from "../components/Loader/Loader.vue";
 import { useThemeStore } from "@/stores/theme";
 import Search from "./components/Search.vue";
-import PopupModal from "../module/Shop/components/PopupModal.vue";
+import PopupModal from "../module/articles/components/PopupModal.vue";
 const sticky = useIsStickyNavbar();
 const state = useThemeStore();
 

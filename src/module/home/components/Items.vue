@@ -17,7 +17,7 @@
       class="main relative mx-auto mt--8 max-w-[1900px] bg-theme-gray py-4 px-12"
     >
       <SectionTitle
-        title="SERVICES WE ARE OFFERING"
+        title="Nos Objectives"
         animation
         id="section-items"
       />
@@ -45,15 +45,15 @@ const { theme } = useThemeStore();
 
 const items = reactive([
   {
-    title: "Live Support",
+    title: "Réduire les émissions de gaz à effet de serre.",
     icon: "icon-question",
   },
   {
-    title: "Daily Rewards",
+    title: "Promouvoir la sensibilisation aux enjeux climatiques.",
     icon: "icon-prix",
   },
   {
-    title: "Secure Payments",
+    title: "Encourager la réduction de la consommation énergétique.",
     icon: "icon-locked",
   },
 ]);

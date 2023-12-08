@@ -7,24 +7,18 @@
       ]"
     >
       <Link to="/" class="w-16">Home</Link>
-      <Link to="/shop/men" class="w-16">Men</Link>
+      <Link to="/articles" class="w-16">Articles</Link>
 
-      <div :class="['h-28 w-[9rem]', { 'h-14 w-[4rem]  pb-1': sticky }]">
+      <div :class="['h-36 w-[9rem] mt-2', { 'hidden': sticky }]">
         <img
           class="h-full w-full rounded-bl-xl rounded-br-xl pb-2"
           :src="fullTheme.logo"
           alt=""
         />
       </div>
-      <Link to="/shop/women" class="w-16">Women</Link>
-      <Link id="navbar-cart" to="/cart" class="relative w-16">
-        <span
-          v-if="basket && basket?.length > 0"
-          class="bg-theme-secondary-90 absolute -right-3 -top-1 flex h-4 w-4 items-center justify-center rounded-full p-2 text-xs font-bold text-white"
-          >{{ basket?.length }}</span
-        >
-        Cart</Link
-      >
+      <Link to="/about" class="w-16">About us</Link>
+      <Link to="/contact-us" class="w-16">Contact</Link>
+
     </div>
   </header>
 </template>
@@ -32,8 +26,6 @@
 <script lang="ts" setup>
 import { useThemeStore } from "@/stores/theme";
 import Link from "@/components/Link.vue";
-import { useCartStore } from "@/stores/cartStore";
 defineProps<{ color?: string; background?: string; sticky?: boolean }>();
 const { fullTheme } = useThemeStore();
-const { basket } = useCartStore();
 </script>

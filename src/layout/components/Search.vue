@@ -31,12 +31,11 @@
         <transition-list-scale
           class="sx:grid-cols-[repeat(auto-fit,_minmax(16rem,_1fr))] content grid h-[calc(100%_-_6rem)] min-h-[300px] grid-cols-[repeat(auto-fit,_minmax(18rem,_1fr))] justify-center justify-items-center overflow-y-auto overflow-x-hidden !bg-gray-100 pt-8 md:!grid-cols-[repeat(auto-fit,_minmax(18rem,_20rem))] md:px-4"
         >
-          <div v-for="item in shopItemsList">
-            <ShopItemCard
+          <div v-for="item in articleItemsList">
+            <ArticleItemCard
               :img="item.img"
               :name="item.name"
-              :price="item.price"
-              :colors="item.colors"
+              :description="item.description"
               :key="item.id"
             />
           </div>
@@ -52,14 +51,14 @@ import IconBase from "../../components/base/icon/IconBase.vue";
 import BaseModal from "../../components/base/Modal/BaseModal.vue";
 import ModalContainer from "../../components/base/Modal/ModalContainer.vue";
 import BaseIconInput from "../../components/base/input/BaseIconInput.vue";
-import { shopItems } from "@/module/Shop/mock/mock";
+import { articleItems } from "@/module/articles/mock/mock";
 import { ref } from "vue";
-import ShopItemCard from "../../module/Shop/components/ShopItemCard.vue";
+import ArticleItemCard from "../../module/articles/components/ArticleItemCard.vue";
 import TransitionListScale from "../../components/animations/TransitionListScale.vue";
 const { showModal, onCloseModal, onOpenModal } = useModal();
-const shopItemsList = ref(shopItems);
+const articleItemsList = ref(articleItems);
 const onSearch = (search: any) => {
-  shopItemsList.value = shopItems.filter((item) =>
+  articleItemsList.value = articleItems.filter((item) =>
     item.name.toUpperCase().includes(search.target.value.toUpperCase())
   );
 };

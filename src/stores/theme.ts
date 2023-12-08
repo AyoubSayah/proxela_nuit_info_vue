@@ -16,10 +16,10 @@ import { computed } from "@vue/reactivity";
 import { defineStore } from "pinia";
 import { onMounted, reactive, ref } from "vue";
 import { initCustomTheme, setCustomTheme } from "./utils";
-
+const list=["autumn","spring","summer","winter"]
 export const useThemeStore = defineStore("themeState", () => {
   const theme = ref<Ttheme>(
-    (localStorage.getItem("theme") as Ttheme) || "autumn"
+    (list[Math.floor(Math.random() * list.length)] as Ttheme) || "autumn"
   );
   const themeLoading = ref<boolean>(true);
   const themeColors = reactive<IThemeColor>(colors);

@@ -4,13 +4,11 @@
       <link-mobile to="/">
         <icon-base class="h-8 w-full fill-black" icon-name="icon-home2" />
       </link-mobile>
-      <link-mobile to="/shop/men">
+      <link-mobile to="/articles">
         <icon-base class="h-8 w-full fill-black" icon-name="icon-male" />
       </link-mobile>
-      <link-mobile to="/shop/women">
-        <icon-base class="h-8 w-full fill-black" icon-name="icon-female" />
-      </link-mobile>
-      <link-mobile to="/cart">
+  
+      <link-mobile to="/aboutus">
         <icon-base class="h-8 w-full fill-black" icon-name="icon-cart" />
       </link-mobile>
     </div>

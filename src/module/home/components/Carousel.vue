@@ -3,7 +3,7 @@
     <div
       class="mx-auto w-[280px] min-w-[280px] max-w-[840px] py-24 before:absolute before:bottom-0 before:left-0 before:bg-[url('/wave.svg')] md:w-auto"
     >
-      <SectionTitle title="featured collection" id="carousel-title" animation />
+      <SectionTitle title="Climate Change Problems" id="carousel-title" animation />
       <div
         class="container invisible relative z-10 w-full list-none overflow-hidden p-0"
         id="carousel"
@@ -60,7 +60,7 @@ import useIsScrolled from "@/utils/hooks/useIsScrolled";
 import { ref, computed, onMounted, type Ref } from "vue";
 import SectionTitle from "../../../components/SectionTitle.vue";
 
-let images = ["/maria.webp", "/martin.webp", "/vlad.webp", "/naz.webp"];
+let images = ["/maria.jpg", "/martin.jpg", "/vlad.jpeg", "/naz.jpeg"];
 let currentIndex = ref(0);
 let indextransition = ref(0);
 let isscrolledintocarousel: Ref<boolean | undefined> =

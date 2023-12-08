@@ -3,16 +3,15 @@ import { defineStore } from "pinia";
 import { reactive, ref } from "vue";
 interface Iitem {
   id?: number;
-  price: string;
   name: string;
   img: string;
-  colors: string[];
+
+  description?: string;
 }
 const initalItem = {
-  price: "",
   name: "",
   img: "",
-  colors: [],
+  description: "",
 };
 export const sharedStore = defineStore("SharedStore", () => {
   const item = ref<Iitem>(initalItem);

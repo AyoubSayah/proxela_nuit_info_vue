@@ -12,7 +12,7 @@
   <footer
     class="mt-auto mt--24 flex h-max w-full max-w-[1900px] flex-wrap items-center justify-center bg-theme-secondary p-8 px-8 pb-20 pt-16 md:items-baseline md:justify-around md:pt-0"
   >
-    <div class="start max-w-full basis-1/3">
+    <div class="start max-w-full basis-1/3 mt-4">
       <Logo />
       <p class="basis-1/3 text-left text-theme-primary">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
@@ -24,8 +24,8 @@
     <div class="middle text-theme-primary parent:my-4">
       <p class="title mb-4 text-2xl font-semibold uppercase">Contact</p>
       <p>Tunisia</p>
-      <p>sayahayoub9827@gmail.com</p>
-      <p>https://github.com/AyoubSayah</p>
+      <p>Proxela</p>
+    
     </div>
     <div class="end text-theme-primary">
       <p class="title mb-4 text-2xl font-semibold uppercase">Social</p>

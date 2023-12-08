@@ -1,8 +1,12 @@
 {
   "hosting": {
     "public": "dist",
-    "site": "templatevue",
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "site": "proxela-nuit-info-2023",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
         "source": "**",

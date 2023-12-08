@@ -36,13 +36,12 @@
       :modules="[Pagination]"
       :id="titleId"
     >
-      <swiper-slide v-for="item in shopItemsList">
-        <ShopItemCard
+      <swiper-slide v-for="item in articleItemsList">
+        <ArticleItemCard
           class="!m-auto"
           :img="item.img"
           :name="item.name"
-          :price="item.price"
-          :colors="item.colors"
+          :description="item.description"
           :key="item.id"
       /></swiper-slide>
     </swiper>
@@ -53,14 +52,14 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import { shopItems } from "@/module/Shop/mock/mock";
+import { articleItems } from "@/module/articles/mock/mock";
 import { ref, type Ref } from "vue";
 import { Pagination } from "swiper";
 
-import ShopItemCard from "../../Shop/components/ShopItemCard.vue";
+import ArticleItemCard from "../../articles/components/ArticleItemCard.vue";
 import SectionTitle from "../../../components/SectionTitle.vue";
 import useIsScrolled from "@/utils/hooks/useIsScrolled";
-const shopItemsList = ref(shopItems);
+const articleItemsList = ref(articleItems);
 const pagination = ref({
   clickable: true,
   bulletActiveClass: "!bg-theme-secondary-60 !opacity-100",
